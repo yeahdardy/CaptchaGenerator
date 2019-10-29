@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+
+import random, time, termcolor, getpass, datetime
+
+
+colors = ['red','blue','green','grey','magenta']
+types = ['date','color','math']
+
+
+def captcha():
+	print('hello {}, please answer this captcha to continue.'.format(getpass.getuser())
+	time.sleep(1)
+	choice = random.choice(types)
+	if choice == 'date':
+		if input('What is the date today?\n>') == datetime.datetime.today()
+			return True
+ return False
